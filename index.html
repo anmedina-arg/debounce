@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DobounceJS</title>
+  </head>
+  <body>
+    <h1>Debounce</h1>
+    <input id="nombre" type="text" placeholder="Nombre" />
+    <input id="apellido" type="text" placeholder="Apellido" />
+    <button>Agregar</button>
+    <ul>
+      Lista de nombres
+    </ul>
+    <script>
+      function escribe(nombre, apellido) {
+        let name = document.getElementById("nombre").value;
+        let lastname = document.getElementById("apellido").value;
+        console.log(name, lastname);
+        let listItem = document.createElement("li");
+        let item = document.createElement("span");
+        console.log(listItem, item);
+      }
+
+      document.querySelector("button").addEventListener("click", escribe);
+    </script>
+  </body>
+</html>
